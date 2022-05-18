@@ -1,0 +1,627 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+header{
+    background: #363e4c;
+    height: 60px;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    font-family: 'Roboto', sans-serif;
+    z-index: 100;
+    background-color: #363e4c;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 21px;
+}
+header ul{
+    float: right;
+    margin-right: 21px;
+}
+header ul li{
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+    list-style: none;
+}
+header ul li a{
+    color: #fff;
+    font-size: 15px;
+    padding: 7px 13px;
+    border-radius: 3px;
+}
+header li a:hover{
+    background: #e48b32;
+    transition: .1s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 14px;
+    }
+}
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    header ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #2c3e50;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover{
+        background: none;
+        color: #ffffff;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+
+#wrp{
+    width: 100%; height: 800px;
+    position:relative;
+    font-family: 'Cormorant Garamond', serif;
+}
+.portada{
+    width: 100%; 
+    height: 100%;
+    background: url("./img/portada.jpg");
+    background-attachment: relative;
+    background-position: 50%;
+}
+.contenido{
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,11,0.6);
+}
+.contenido .info{
+    width: 100%;
+    max-width: 750px;
+    text-align: center;
+}
+.contenido .info h1{
+    color: #fff;
+    font-size: 50px;
+    text-shadow: 0px 1px 10px rgba(0,0,0,0.4);
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+}
+.contenido .info a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 25px;
+    color: #fff;
+    background: #4897C3;
+    border-radius: 50px;
+    margin-bottom: 40px;
+    border: 2px solid transparent;
+    transition: all 300ms ease;
+    letter-spacing: 0.5px;
+}
+.contenido .info a:hover{
+    background: transparent;
+    border: 2px solid #fff;
+}
+.curveado{
+    position: absolute;
+    width: 100%;
+    bottom: -10px;
+}
+.curveado img{
+    width: 100%;
+}
+@media(max-width:768px){
+    .contenido .info h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+.container{
+    position:relative;
+    top:0;
+    height: auto;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    display: block;
+}
+.container h2{
+    font-size: 35px;
+}
+.container p{
+    position: relative;
+    top: 0px;
+    font-size: 16px;
+}
+.foto1{
+    position:relative;
+    height: auto;
+    width: 100%;
+}
+.foto1 img{
+    height: auto;
+    width: 95%;
+    position: relative;
+    left: 2.5%;
+}
+.contenido1{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+.contenido1 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.contenido1 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.inline1{
+    display: flex;
+    top: 0px;
+}
+.foto2{
+    position:relative;
+    height: auto;
+    width: 50%;
+    top: 0px;
+}
+ .foto2 img{
+    height: auto;
+    width: 80%;
+    position: relative;
+    left: 20%;
+}
+ .contenido2{
+    position: relative;
+    top: 30px;
+    width: 50%;
+    height: auto;
+    top: 0px;
+}
+ .contenido2 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 0%;
+    text-align: left;
+    top: 20px;
+}
+.contenido2 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    text-align: left;
+    top: 20px;
+}
+.foto3{
+    position:relative;
+    height: auto;
+    width: 100%;
+    top: 0;
+}
+.foto3 img{
+    height: auto;
+    width: 95%;
+    position: relative;
+    left: 2.5%;}
+
+.contenido3{
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: auto;
+    top: 0;
+}
+.contenido3 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+    .contenido3 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.inline2{
+    display: flex;
+    top: 0px;
+}
+.foto4{
+    position:relative;
+    height: auto;
+    width: 50%;
+    top: 0px;
+}
+ .foto4 img{
+    height: auto;
+    width: 50%;
+    position: relative;
+    right: 0%;
+}
+ .contenido4{
+    position: relative;
+    top: 0;
+    width: 50%;
+    height: auto;
+    top: 0px;
+
+}
+ .contenido4 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 37%;
+    text-align: right;
+    top: 00%;
+}
+.contenido4 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    text-align: right;
+    left: 37%;
+    top:0%
+}    
+.foto5{
+    position:relative;
+    height: auto;
+    width: 100%;
+}
+.foto5 img{
+    height: auto;
+    width: 70%;
+    position: relative;
+    left: 15%;
+}
+.contenido5{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+.contenido5 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.contenido5 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.foto6{
+    position:relative;
+    height: auto;
+    width: 100%;
+}
+.foto6 img{
+    height: auto;
+    width: 30%;
+    position: relative;
+    left: 35%;
+}
+.contenido6{
+    position: relative;
+    top: 0px;
+    width: 100%;
+    height: auto;
+}
+.contenido6 p{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+.contenido6 h2{
+    position: relative;
+    width: 60%;
+    height: auto;
+    left: 20%;
+    text-align: center;
+}
+@media(max-width:924px){
+    .inline1{display: inline-block;}
+    .inline2{display: inline-block;}
+    .foto2 {width: 100%;}
+    .foto2 img{left: 10%;}
+    .contenido2{width: 100%;}
+    .contenido2 p { text-align: center; width: 60%; left: 20%; top: 0; }
+    .contenido2 h2 { text-align: center; width: 60%; left: 20%; top: 0;}
+    .foto4 {width: 100%;}
+    .foto4 img{left: 25%;}
+    .contenido4{width: 100%;}
+    .contenido4 p { text-align: center; width: 60%; left: 20%;}
+    .contenido4 h2 { text-align: center; width: 60%; left: 20%;}
+}
+@media(max-width:722px){
+    .container h2{font-size: 25px;}
+    .container p{font-size: 16px;}
+}
+
+
+
+
+.acordeon{
+    position: relative;
+    height: auto;
+    width: 100%;
+    top:auto;
+    left: auto;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(65, 65, 65);
+}    
+.desplegable{
+    position: relative;
+    background-color: antiquewhite;
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 6px;
+    margin: 0.5rem;
+    cursor: pointer;
+    left: 5%;
+}
+.contenido-desplegable{
+    position: relative;
+    background-color: rgb(255, 250, 245);
+    padding: 0.5rem;
+    width: 90%;
+    border-radius: 6px;
+    margin: 0.5rem;
+    left: 5%;
+    color: rgb(65, 65, 65);
+}
+.contenido-desplegable ul{
+
+    position: relative;
+    left: 5%;
+    width: 90%;
+}
+
+
+
+
+
+.fotos-contenido{
+    position: relative;
+    width: 100%;
+    height: auto;
+    top: auto;
+    display: flex;
+    top: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.foto01{
+    width: 25%;
+    height: auto;
+    position: relative;
+    left:0;
+    padding: 2.5%;
+}
+.foto01 img{
+    width: 100%;
+    height: auto;
+    left: 0%;
+}
+.foto02{
+    width: 25%;
+    height: auto;
+    position: relative;
+    padding: 2.5%;
+}
+.foto02 img{
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+.foto03{
+    width: 25%;
+    height: auto;
+    position: relative;
+    padding: 2.5%;
+}
+.foto03 img{
+    width: 100%;
+    height: auto;
+    left: 0%;
+}
+.foto04{
+    width: 25%;
+    height: auto;
+    position: relative;
+    padding: 2.5%;
+}
+.foto04 img{
+    width: 100%;
+    height: auto;
+    left: 0;
+}
+@media(max-width:922px){
+    .fotos-contenido{display: block; text-align: center;}
+    .foto01 {width: 100%; padding:  2% 20%; }
+    .foto02 {width: 100%; padding:  2% 20%;}
+    .foto03 {width: 100%; padding:  2% 20%;}
+    .foto04 {width: 100%; padding:  2% 20%;}
+}
+
+
+
+
+
+.boton{
+    width: 70%;
+    height: 30px;
+    position: relative;
+    text-align: center;
+    background-color: rgb(124, 124, 124);
+    border-radius: 6px;
+    left: 15%;
+}
+.boton a{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    position: relative;
+    top: 4px;
+    font-style: normal;
+    text-decoration: none;
+}
+.boton :hover{
+    text-decoration: underline rgb(175, 175, 175);
+}
+@media(max-width:571px){
+    .boton{height: 55px;}
+}
+@media(max-width:282px){
+    .boton{height: 80px;}
+}
+
+
+
+
+footer{
+    width: 100%;
+    height: auto;
+    background-color: rgb(250, 250, 250);
+    position: relative;
+    top:0;
+}
+.pie1 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 2.5%;
+    font-family: 'Roboto', sans-serif;
+    text-align:left;
+    top: 90px;
+}
+.pie2 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 27.5% ;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    top: 90px;
+}
+.pie3 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 52.5% ;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    top: 90px;
+}
+.pie4 {
+    width: 20%;
+    height: auto;
+    position: absolute;
+    left: 77.5% ;
+    font-family: 'Roboto', sans-serif;
+    text-align: left;
+    top: 90px;
+}
+.pie-de-pagina li{
+    list-style: none;
+}
+.pie-de-pagina h2{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(41, 41, 41);
+    font-size: 15px;
+}
+.pie-de-pagina a{
+    font-family: 'Roboto', sans-serif;
+    color: rgb(105, 105, 105);
+    font-size: 12px;
+    position: relative;
+    top: 4px;
+    font-style: normal;
+    text-decoration: none;
+}
+.pie-de-pagina a:hover{
+    text-decoration:underline rgb(97, 97, 97);
+}
+.barra{
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    position: relative;
+    background-color: rgb(240, 240, 240);
+}
+@media(max-width:560px){
+    .pie-de-pagina h2{font-size: 10px;}
+    .pie-de-pagina a {font-size: 10px;}
+}
+@media(max-width:310px){
+    .pie-de-pagina h2{font-size: 9px;}
+    .pie-de-pagina a {font-size: 9px;}
+}
